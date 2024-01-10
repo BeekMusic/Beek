@@ -68,3 +68,11 @@ color: aliceblue;
     background-color: rgba(0, 0, 0, 0.78); /* Adjust the alpha value (0.3 for semi-transparent black) */
     z-index: -1;
   }
+ @media (max-width: 768px) {
+    .mySlides img {
+      max-width: 80%; /* Adjust the percentage as needed */
+    }
+    .first-pic-info{
+        position: relative;
+    }
+}
