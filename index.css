@@ -30,14 +30,26 @@ color: aliceblue;
     background-color: rgb(151, 32, 32);    
 }
 .first-pic-info{
-    position: relative; right: 700px; height: 500px;
+    position: relative;
+    right: 700px;
+    height: 600px;
     max-width: 500px;
+    padding: 16px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+h3{
+    font-family: 'Orbitron', sans-serif;
 }
 .spotify-track{
     position: relative; height: 100px;
 }
 .blurry-background {
-    background-image: url('IMG_9561darker.png');
+    background-image: url('/Album-covers/IMG_9561darker.png');
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -60,7 +72,7 @@ color: aliceblue;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('IMG_9561darker.png');
+    background-image: url('/Album-covers/IMG_9561darker.png');
     background-size: cover;
     background-position: center;
     filter: blur(10px); /* Adjust the blur intensity as needed */
@@ -68,11 +80,21 @@ color: aliceblue;
     background-color: rgba(0, 0, 0, 0.78); /* Adjust the alpha value (0.3 for semi-transparent black) */
     z-index: -1;
   }
- @media (max-width: 768px) {
+  .first-pic-info-mobile{
+        display: none;
+  }
+
+  @media (max-width: 768px) {
     .mySlides img {
       max-width: 80%; /* Adjust the percentage as needed */
     }
     .first-pic-info{
-        position: relative;
+        display: none;
+    }
+    .spotify-track{
+        display: none;
+    }
+    .first-pic-info-mobile{
+        display: contents;
     }
 }
